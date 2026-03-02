@@ -8,12 +8,13 @@
 //  ├───┼───┼───┼───┼───┼───┐       ┌───┼───┼───┼───┼───┼───┤
 //  │ Z │ X │ C │ V │ B │LC │       │RC │ N │ M │ , │ . │ / │
 //  ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//  │Ctl│GUI│Alt│Ctl│Spc│L1/│       │変/│L2/│   │   │Tab│Esc│
-//  │   │   │   │   │   │英 │       │Sft│Ent│▓▓▓│▓▓▓│   │   │
+//  │Ctl│GUI│Alt│Bsp│L1/│L3/│       │変/│L2/│   │   │Tab│Del│
+//  │   │   │   │   │Spc│英 │       │Sft│Ent│▓▓▓│▓▓▓│   │   │
 //  └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
 //
 //  変/Sft = tap:LANGUAGE_1(変換), hold:RShift
-//  英/Sft = tap:LANGUAGE_2(無変換), hold:LShift
+//  英/L3  = tap:LANGUAGE_2(無変換), hold:Layer3
+//  L1/Spc = tap:Space, hold:Layer1
 //  ▓▓▓ = trackball position (no physical key)
 //  BT_CLR = BT_SEL 0 + BT_SEL 1 combo in Layer 2 (key-positions 20+21)
 
@@ -43,7 +44,7 @@
 &kp Q      &kp W      &kp E      &kp R      &kp T         &kp Y      &kp U      &lt 3 I    &kp O      &kp P
 &kp A      &kp S      &kp D      &kp F      &kp G         &kp H      &kp J      &kp K      &kp L      &lt 4 SQT
 &kp Z      &kp X      &kp C      &kp V      &kp B      &mkp LCLK     &mkp RCLK  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&kp LCTRL  &kp LGUI   &kp LALT   &kp LCTRL    &kp SPACE   &lt 1 LANGUAGE_2   &mt RSHFT LANGUAGE_1   &lt 2 ENTER   &none      &none      &kp TAB   &kp ESC
+&kp LCTRL  &kp LGUI   &kp LALT   &kp BSPC     &lt 1 SPACE  &lt 3 LANGUAGE_2   &mt RSHFT LANGUAGE_1   &lt 2 ENTER   &none      &none      &kp TAB   &kp DEL
             >;
         };
 
@@ -89,7 +90,7 @@
         //  All transparent — trackball acts as scroll wheel (see left/right.overlay)
         layer_3 {
             bindings = <
-&trans     &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
+&kp ESC    &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &mkp LCLK     &mkp RCLK  &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &trans         &trans                &trans                &none      &none      &trans     &trans
