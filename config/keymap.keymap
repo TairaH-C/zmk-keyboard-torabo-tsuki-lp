@@ -88,12 +88,13 @@
 
         // ── Layer 3: Scroll  (hold I) ─────────────────────────────────────
         //  All transparent — trackball acts as scroll wheel (see left/right.overlay)
+        //  変 position = MB4 (mouse back), ent position = MB5 (mouse forward)
         layer_3 {
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &mkp LCLK     &mkp RCLK  &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans     &trans         &trans                &trans                &none      &none      &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans         &mkp MB4              &mkp MB5              &none      &none      &trans     &trans
             >;
         };
 
