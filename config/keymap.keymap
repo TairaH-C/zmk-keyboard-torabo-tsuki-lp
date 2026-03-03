@@ -113,7 +113,7 @@
 &trans     &trans     &trans     &trans     &trans        &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans        &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans     &trans     &trans     &trans     &trans     &mkp LCLK     &mkp RCLK  &trans     &trans     &trans     &trans     &trans
-&trans     &trans     &trans     &trans     &trans     &trans         &trans                &trans                &none      &none      &trans     &trans
+&trans     &trans     &trans     &trans     &trans     &trans         &mkp MB4              &mkp MB5              &none      &none      &trans     &trans
             >;
         };
     };
