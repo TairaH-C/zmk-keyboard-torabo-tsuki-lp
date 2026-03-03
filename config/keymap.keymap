@@ -8,8 +8,8 @@
 //  ├───┼───┼───┼───┼───┼───┐       ┌───┼───┼───┼───┼───┼───┤
 //  │ Z │ X │ C │ V │ B │LC │       │RC │ N │ M │ , │ . │ / │
 //  ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//  │Ctl│GUI│Alt│Sft│L1/│L3/│       │変/│L2/│   │   │Tab│Del│
-//  │   │   │   │   │Spc│英 │       │Sft│Ent│▓▓▓│▓▓▓│   │   │
+//  │Ctl│GUI│Alt│Sft│L4/│L1/│       │L2/│変/│   │   │Del│Tab│
+//  │   │   │   │   │英 │Spc│       │Ent│Sft│▓▓▓│▓▓▓│   │   │
 //  └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
 //
 //  変/Sft = tap:LANGUAGE_1(変換), hold:RShift
@@ -44,7 +44,7 @@
 &kp Q      &kp W      &kp E      &kp R      &kp T         &kp Y      &kp U      &lt 3 I    &kp O      &kp P
 &kp A      &kp S      &kp D      &kp F      &kp G         &kp H      &kp J      &kp K      &kp L      &lt 4 SQT
 &kp Z      &kp X      &kp C      &kp V      &kp B      &mkp LCLK     &mkp RCLK  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&kp LCTRL  &kp LGUI   &kp LALT   &kp LSHFT    &lt 1 SPACE  &lt 3 LANGUAGE_2   &mt RSHFT LANGUAGE_1   &lt 2 ENTER   &none      &none      &kp TAB   &kp DEL
+&kp LCTRL  &kp LGUI   &kp LALT   &kp LSHFT  &lt 4 LANGUAGE_2    &lt 1 SPACE   &lt 2 ENTER   &mt RSHFT LANGUAGE_1   &none      &none      &kp TAB   &kp DEL
             >;
         };
 
