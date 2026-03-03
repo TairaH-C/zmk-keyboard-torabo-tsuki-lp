@@ -1,4 +1,4 @@
-// torabo-tsuki LP — S size keymap (44 keys, 5 layers)
+// torabo-tsuki LP — S size keymap (44 keys, 6 layers)
 //
 // Layout (S size):
 //  ┌───┬───┬───┬───┬───┐               ┌───┬───┬───┬───┬───┐
@@ -8,12 +8,13 @@
 //  ├───┼───┼───┼───┼───┼───┐       ┌───┼───┼───┼───┼───┼───┤
 //  │ Z │ X │ C │ V │ B │LC │       │RC │ N │ M │ , │ . │ / │
 //  ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//  │Ctl│GUI│Alt│Sft│L4/│L1/│       │L2/│変/│   │   │Del│Tab│
+//  │Ctl│GUI│Alt│mo5│L4/│L1/│       │L2/│変/│   │   │Del│Tab│
 //  │   │   │   │   │英 │Spc│       │Ent│Sft│▓▓▓│▓▓▓│   │   │
 //  └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
 //
+//  mo5 = tap:LShift, hold:Layer5 (Win Shortcuts)
 //  変/Sft = tap:LANGUAGE_1(変換), hold:RShift
-//  英/L3  = tap:LANGUAGE_2(無変換), hold:Layer3
+//  英/L4  = tap:LANGUAGE_2(無変換), hold:Layer4
 //  L1/Spc = tap:Space, hold:Layer1
 //  ▓▓▓ = trackball position (no physical key)
 //  BT_CLR = BT_SEL 0 + BT_SEL 1 combo in Layer 2 (key-positions 20+21)
@@ -44,7 +45,7 @@
 &kp Q      &kp W      &kp E      &kp R      &kp T         &kp Y      &kp U      &lt 3 I    &kp O      &kp P
 &kp A      &kp S      &kp D      &kp F      &kp G         &kp H      &kp J      &kp K      &kp L      &lt 4 SQT
 &kp Z      &kp X      &kp C      &kp V      &kp B      &mkp LCLK     &mkp RCLK  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&kp LCTRL  &kp LGUI   &kp LALT   &kp LSHFT  &lt 4 LANGUAGE_2    &lt 1 SPACE   &lt 2 ENTER   &mt RSHFT LANGUAGE_1   &none      &none      &kp TAB   &kp DEL
+&kp LCTRL  &kp LGUI   &kp LALT   &lt 5 LSHFT  &lt 4 LANGUAGE_2    &lt 1 SPACE   &lt 2 ENTER   &mt RSHFT LANGUAGE_1   &none      &none      &kp TAB   &kp DEL
             >;
         };
 
@@ -114,6 +115,41 @@
 &trans     &trans     &trans     &trans     &trans        &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
 &trans     &trans     &trans     &trans     &trans     &mkp LCLK     &mkp RCLK  &trans     &trans     &trans     &trans     &trans
 &trans     &trans     &trans     &trans     &trans     &trans         &mkp MB4              &mkp MB5              &none      &none      &trans     &trans
+            >;
+        };
+
+        // ── Layer 5: Windows Shortcuts  (hold LSHFT) ────────────────────────
+        //  Engineer-oriented shortcuts for Windows / VS Code
+        //
+        //  ┌────┬────┬────┬────┬────┐               ┌────┬────┬────┬────┬────┐
+        //  │Esc │C-W │WinE│C-R │C-T │               │C-Y │C-Z │CSSI│C-O │C-P │
+        //  ├────┼────┼────┼────┼────┤               ├────┼────┼────┼────┼────┤
+        //  │C-A │C-S │C-D │C-F │C-G │               │C-H │    │C-/ │C-L │ C-`│
+        //  ├────┼────┼────┼────┼────┼────┐     ┌────┼────┼────┼────┼────┼────┤
+        //  │C-Z │C-X │C-C │C-V │CSSP│ LC │     │ RC │C-N │WinD│CSST│WSSS│AF4 │
+        //  ├────┼────┼────┼────┼────┼────┤     ├────┼────┼────┼────┼────┼────┤
+        //  │    │    │    │▓▓▓▓│    │    │     │    │    │▓▓▓▓│▓▓▓▓│    │    │
+        //  └────┴────┴────┴────┴────┴────┘     └────┴────┴────┴────┴────┴────┘
+        //
+        //  C- = Ctrl, CS = Ctrl+Shift, Win = GUI, WS = Win+Shift, AF4 = Alt+F4
+        //  WinE  = Win+E (Explorer)          C-Z  = Ctrl+Z (Undo)
+        //  C-W   = Ctrl+W (Close tab)        C-Y  = Ctrl+Y (Redo)
+        //  C-T   = Ctrl+T (New tab)          C-R  = Ctrl+R (Refresh/Run)
+        //  C-A   = Ctrl+A (Select all)       C-S  = Ctrl+S (Save)
+        //  C-D   = Ctrl+D (Duplicate/Next)   C-F  = Ctrl+F (Find)
+        //  C-G   = Ctrl+G (Go to line)       C-H  = Ctrl+H (Replace)
+        //  C-/   = Ctrl+/ (Toggle comment)   C-L  = Ctrl+L (Select line)
+        //  C-`   = Ctrl+` (Terminal toggle)  C-O  = Ctrl+O (Open)
+        //  C-P   = Ctrl+P (Quick open)       C-N  = Ctrl+N (New file)
+        //  CSSI  = Ctrl+Shift+I (DevTools)   CSSP = Ctrl+Shift+P (Cmd palette)
+        //  CSST  = Ctrl+Shift+T (Reopen tab) WSSS = Win+Shift+S (Screenshot)
+        //  WinD  = Win+D (Show desktop)      AF4  = Alt+F4 (Close app)
+        layer_5 {
+            bindings = <
+&kp ESC        &kp LC(W)      &kp LG(E)      &kp LC(R)      &kp LC(T)         &kp LC(Y)  &kp LC(Z)  &kp LC(LS(I))  &kp LC(O)      &kp LC(P)
+&kp LC(A)      &kp LC(S)      &kp LC(D)      &kp LC(F)      &kp LC(G)         &kp LC(H)  &trans     &kp LC(FSLH)   &kp LC(L)      &kp LC(GRAVE)
+&kp LC(Z)      &kp LC(X)      &kp LC(C)      &kp LC(V)      &kp LC(LS(P))  &mkp LCLK     &mkp RCLK  &kp LC(N)  &kp LG(D)  &kp LC(LS(T))  &kp LG(LS(S))  &kp LA(F4)
+&trans         &trans         &trans         &trans         &trans         &trans         &trans                &trans                &none      &none      &trans     &trans
             >;
         };
     };
