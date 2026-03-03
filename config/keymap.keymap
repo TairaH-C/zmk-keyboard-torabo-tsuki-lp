@@ -8,11 +8,11 @@
 //  ├───┼───┼───┼───┼───┼───┐       ┌───┼───┼───┼───┼───┼───┤
 //  │ Z │ X │ C │ V │ B │LC │       │RC │ N │ M │ , │ . │ / │
 //  ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//  │Ctl│GUI│Alt│L5/│L4/│L1/│       │L2/│Ent│   │   │Del│Tab│
-//  │   │   │   │Sft│Spc│英 │       │変 │Sft│▓▓▓│▓▓▓│   │   │
+//  │Ctl│GUI│Alt│L5/│L4/│L1/│       │L2/│Ent│   │   │Sft│Tab│
+//  │   │   │   │Del│Spc│英 │       │変 │Sft│▓▓▓│▓▓▓│   │   │
 //  └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
 //
-//  L5/Sft = tap:LShift, hold:Layer5 (Win Shortcuts)
+//  L5/Del = tap:DEL, hold:Layer5 (Win Shortcuts)
 //  変/Sft = tap:LANGUAGE_1(変換), hold:RShift
 //  英/L4  = tap:LANGUAGE_2(無変換), hold:Layer4
 //  L1/Spc = tap:Space, hold:Layer1
@@ -45,7 +45,7 @@
 &kp Q      &kp W      &kp E      &kp R      &kp T         &kp Y      &kp U      &lt 3 I    &kp O      &kp P
 &kp A      &kp S      &kp D      &kp F      &kp G         &kp H      &kp J      &kp K      &kp L      &lt 4 SQT
 &kp Z      &kp X      &kp C      &kp V      &kp B      &mkp LCLK     &mkp RCLK  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&kp LCTRL  &kp LGUI   &kp LALT   &lt 5 LSHFT  &lt 4 SPACE    &lt 1 LANGUAGE_2   &lt 2 LANGUAGE_1   &mt RSHFT ENTER   &none      &none      &kp TAB   &kp DEL
+&kp LCTRL  &kp LGUI   &kp LALT   &lt 5 DEL     &lt 4 SPACE    &lt 1 LANGUAGE_2   &lt 2 LANGUAGE_1   &mt RSHFT ENTER   &none      &none      &kp LSHFT  &kp TAB
             >;
         };
 
