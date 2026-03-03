@@ -8,8 +8,8 @@
 //  ├───┼───┼───┼───┼───┼───┐       ┌───┼───┼───┼───┼───┼───┤
 //  │ Z │ X │ C │ V │ B │LC │       │RC │ N │ M │ , │ . │ / │
 //  ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
-//  │Ctl│GUI│Alt│L5/│L4/│L1/│       │L2/│変/│   │   │Del│Tab│
-//  │   │   │   │Sft│英 │Spc│       │Ent│Sft│▓▓▓│▓▓▓│   │   │
+//  │Ctl│GUI│Alt│L5/│L4/│L1/│       │L2/│Ent│   │   │Del│Tab│
+//  │   │   │   │Sft│Spc│英 │       │変 │Sft│▓▓▓│▓▓▓│   │   │
 //  └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
 //
 //  L5/Sft = tap:LShift, hold:Layer5 (Win Shortcuts)
@@ -45,7 +45,7 @@
 &kp Q      &kp W      &kp E      &kp R      &kp T         &kp Y      &kp U      &lt 3 I    &kp O      &kp P
 &kp A      &kp S      &kp D      &kp F      &kp G         &kp H      &kp J      &kp K      &kp L      &lt 4 SQT
 &kp Z      &kp X      &kp C      &kp V      &kp B      &mkp LCLK     &mkp RCLK  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-&kp LCTRL  &kp LGUI   &kp LALT   &lt 5 LSHFT  &lt 4 LANGUAGE_2    &lt 1 SPACE   &lt 2 ENTER   &mt RSHFT LANGUAGE_1   &none      &none      &kp TAB   &kp DEL
+&kp LCTRL  &kp LGUI   &kp LALT   &lt 5 LSHFT  &lt 4 SPACE    &lt 1 LANGUAGE_2   &lt 2 LANGUAGE_1   &mt RSHFT ENTER   &none      &none      &kp TAB   &kp DEL
             >;
         };
 
